@@ -1,39 +1,53 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <title>Biblioteca</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="logo.png">
 </head>
+
 <body>
 
-<header class="topbar">
-    <div class="logo">
-        <img src="logo.png" alt="Logo Biblioteca">
-        <span class="span1">BIBLIOTECA </span>
-        <span class="span2">COMUNITÁRIA</span>
+    <header class="topbar">
+        <div class="logo">
+            <img src="logo.png" alt="">
+            <span class="span1">BIBLIOTECA </span>
+            <span class="span2">COMUNITÁRIA</span>
+        </div>
+
+        <div class="perfil">👤 Perfil</div>
+    </header>
+
+    <section class="search-area">
+        <input type="text" id="searchInput" placeholder="Pesquisa..." />
+        <button id="filterBtn">Filtros</button>
+    </section>
+
+    <h1 class="titulo">LIVROS POPULARES:</h1>
+
+    <section class="resultados-busca" id="resultadosBusca"></section>
+
+    <div class="modal" id="modal">
+        <div class="modal-content">
+            <span id="closeModal">✖</span>
+            <h2 id="modalTitulo"></h2>
+            <p><strong>Autor:</strong> <span id="modalAutor"></span></p>
+            <p><strong>Lançamento:</strong> <span id="modalAno"></span></p>
+            <p><strong>Nota:</strong> ⭐ <span id="modalNota"></span></p>
+
+            <hr>
+
+            <p id="modalDescricao"></p>
+        </div>
     </div>
 
-    <div class="perfil">👤 Perfil</div>
-</header>
+    <footer>
+        <p class="copyright">© 2026 Biblioteca Comunitária. Todos os direitos reservados.</p>
+    </footer>
 
-<section class="search-area">
-    <input type="text" id="searchInput" placeholder="Pesquisa..." />
-    <button id="filterBtn">Filtros</button>
-</section>
-
-<h1 class="titulo">LIVROS POPULARES:</h1>
-
-<section class="resultados-busca" id="resultadosBusca"></section>
-
-<div class="modal" id="modal">
-    <div class="modal-content">
-        <span id="closeModal">✖</span>
-        <h2 id="modalTitulo"></h2>
-        <p id="modalDescricao"></p>
-    </div>
-</div>
-
-<script src="script.js"></script>
+    <script src="script.js"></script>
 </body>
+
 </html>
