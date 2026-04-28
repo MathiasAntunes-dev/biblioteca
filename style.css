@@ -9,12 +9,41 @@ body {
     background:#efefef;
 }
 
-.topbar {
+
+.topbar{
     background:#ddd;
     padding:15px 30px;
-    display:flex; 
-    justify-content:space-between; 
-    font-size:22px; 
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    font-size: 22px;
+    color: black;
+    font-weight: 600;
+}
+
+/* bloco logo + nome */
+.logo{
+    display:flex;
+    align-items:center;
+    gap:12px;
+}
+
+.logo img{
+    height:45px;
+}
+
+.span1{
+    font-size:22px;
+    font-weight:600;
+    letter-spacing:1px;
+    color: #110958;
+}
+
+.span2{
+    font-size:22px;
+    font-weight:600;
+    letter-spacing:1px;
+    color: rgb(255, 140, 0);
 }
 
 .search-area { 

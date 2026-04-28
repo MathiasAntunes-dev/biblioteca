@@ -1,9 +1,9 @@
 const livros = [
-    {titulo: "Dom Casmurro", disponivel: false, autor: "Machado de Assis", descricao: "Clássico de Machado de Assis.", imagem: "https://upload.wikimedia.org/wikipedia/commons/0/05/DomCasmurroMachadodeAssis.jpg"},
-    {titulo: "Harry Potter", disponivel: true, autor: "J.K. Rowling", descricao: "Livro de magia e aventura.", imagem: "https://upload.wikimedia.org/wikipedia/pt/3/3a/Harry_Potter_and_the_Deathly_Hallows_-_Part_2.jpg"},
-    {titulo: "Senhor dos Anéis", disponivel: true, autor: "J.R.R. Tolkien", descricao: "Fantasia épica.", imagem: "https://upload.wikimedia.org/wikipedia/pt/5/59/The_Lord_of_the_Rings_The_Two_Towers.jpg"},
-    {titulo: "O Pequeno Príncipe", disponivel: true, autor: "Antoine de Saint-Exupéry", descricao: "Livro filosófico.", imagem: "https://upload.wikimedia.org/wikipedia/pt/4/47/O-pequeno-pr%C3%ADncipe.jpg"},
-    {titulo: "Percy Jackson", disponivel: false, autor: "Rick Riordan", descricao: "Mitologia grega moderna.", imagem: "https://grafipel.com.br/wp-content/uploads/2026/03/00137958.jpg"}
+    {titulo: "Dom Casmurro", disponivel: false, autor: "Machado de Assis", descricao: "Clássico da literatura brasileira narrado por Bentinho, que relembra sua juventude e o relacionamento com Capitu. A obra explora temas como ciúme, memória, insegurança e a subjetividade da verdade, deixando o leitor refletir sobre o que realmente aconteceu.", imagem: "https://upload.wikimedia.org/wikipedia/commons/0/05/DomCasmurroMachadodeAssis.jpg"},
+    {titulo: "Harry Potter", disponivel: true, autor: "J.K. Rowling", descricao: "A série acompanha Harry, um garoto que descobre ser bruxo e passa a estudar em Hogwarts. Ao lado de amigos, ele enfrenta desafios, descobre segredos do passado e luta contra o poderoso Voldemort em uma história sobre amizade, coragem e crescimento.", imagem: "https://upload.wikimedia.org/wikipedia/pt/3/3a/Harry_Potter_and_the_Deathly_Hallows_-_Part_2.jpg"},
+    {titulo: "Senhor dos Anéis", disponivel: true, autor: "J.R.R. Tolkien", descricao: "Uma épica jornada na Terra Média em que Frodo precisa destruir o Um Anel para impedir que o mal domine o mundo. A história mistura aventura, amizade, coragem e sacrifício em um universo rico e detalhado que marcou a fantasia moderna.", imagem: "https://upload.wikimedia.org/wikipedia/pt/5/59/The_Lord_of_the_Rings_The_Two_Towers.jpg"},
+    {titulo: "O Pequeno Príncipe", disponivel: true, autor: "Antoine de Saint-Exupéry", descricao: "Um conto sensível e filosófico que acompanha um pequeno viajante de outro planeta. Durante suas viagens, ele aprende lições profundas sobre amizade, amor, solidão e a importância de enxergar o mundo com o coração.", imagem: "https://upload.wikimedia.org/wikipedia/pt/4/47/O-pequeno-pr%C3%ADncipe.jpg"},
+    {titulo: "Percy Jackson", disponivel: false, autor: "Rick Riordan", descricao: "Percy descobre ser filho de Poseidon e passa a viver aventuras em um mundo onde a mitologia grega é real. Com humor e ação, a série mostra a jornada de heróis jovens enfrentando monstros, deuses e desafios enquanto descobrem quem realmente são.", imagem: "https://grafipel.com.br/wp-content/uploads/2026/03/00137958.jpg"}
 ];
 
 const container = document.getElementById("resultadosBusca");
@@ -13,7 +13,7 @@ const modalDescricao = document.getElementById("modalDescricao");
 const closeModal = document.getElementById("closeModal");
 
 function exibirLivros(lista) {
-    container.innerHTML = ""; // Limpa a tela antes de renderizar
+    container.innerHTML = "";
 
     lista.forEach((livro) => {
         const card = document.createElement("div");
