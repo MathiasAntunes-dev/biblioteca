@@ -69,7 +69,7 @@ const livros = [
         ano: 2005,
         nota: 4.6,
         descricao: "Percy descobre ser filho de Poseidon e passa a viver aventuras em um mundo onde a mitologia grega é real. Com humor e ação, a série mostra a jornada de heróis jovens enfrentando monstros, deuses e desafios enquanto descobrem quem realmente são.",
-        imagem: "https://grafipel.com.br/wp-content/uploads/2026/03/00137958.jpg"
+        imagem: "https://i0.wp.com/www.touchelivros.com.br/wp-content/uploads/2024/09/9788580575392.jpg?fit=585%2C900&ssl=1"
     }
 ]
 
@@ -95,6 +95,7 @@ function exibirLivros(lista) {
         titulo.textContent = livro.titulo;
 
         const status = document.createElement("p");
+        
         status.textContent = livro.disponivel ? "Disponível" : "Indisponível";
         status.classList.add("status");
         status.classList.add(livro.disponivel ? "disponivel" : "indisponivel");
